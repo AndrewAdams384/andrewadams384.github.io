@@ -1,0 +1,231 @@
+body {
+    background-color: #d4d9eb ;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.header {
+    display:flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 25px;
+    background-color: #7087d1;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+    padding-bottom: 10px;
+    color:seashell;
+}
+
+.header .full-screen-nav {
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header .full-screen-nav ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.header .full-screen-nav ul li {
+    display: inline-block;
+    margin-left: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.header .full-screen-nav ul li a {
+    color: seashell;
+    text-decoration: none;
+}
+
+.header .full-screen-nav ul li a:active {
+    color: orange;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown:hover .dropdown-links  {
+    display: block;
+}
+
+.dropbtn {
+    background-color: #7087d1;
+    color: seashell;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 32px;
+    float: right;
+}
+
+.dropdown-links {
+    overflow: hidden;
+    display: none;
+    font-size: 32px;
+}
+
+.dropdown-links a {
+    color: seashell;
+    float: none;
+    display: block;
+    font-size: 32px;
+    text-align: right;
+}
+
+.content {
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+.content h1 {
+    font-size: 36px;
+}
+
+.content .intro img {
+    display: block;
+    border-radius: 50%;
+    border: 7.5px solid orange;
+    height: 325px;
+    width: 307.25px;
+}
+
+.content .intro {
+    padding-right: 50px;
+}
+
+.content .intro p {
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 3;
+}
+
+.portfolio {
+    padding-top: 100px;
+}
+
+.portfolio img {
+    display: flex;
+    border: 7.5px solid orange;
+}
+
+.projects .sanpedro {
+    height: 622px;
+    width: 466px;
+    float: left;
+}
+
+.projects {
+    padding-top: 25px;
+    display: block;
+}
+
+.san-pedro-text {
+    position: relative;
+    background-color: orange;
+    font-size: 48px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cheers {
+    height: 311px;
+    width: 464.8px;
+}
+
+.resume {
+    padding-top: 100px;
+}
+
+.resume-doc {
+    width: 100%;
+    height: 1250px;
+}
+
+.contact {
+    padding-top: 100px;
+}
+
+.contact p {
+    padding-top: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1020px) {
+    
+    .header {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .header h1 {
+        float: left;
+    }
+    
+    .header .full-screen-nav {
+        display: none;
+    }
+
+    .float-left {
+        float: none;
+        margin: auto;
+    }
+
+    .content {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .content h1 {
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    .content img {
+        width: 50%;
+        height: 50%;
+        align-items: center;
+    }
+
+    .content .intro p {
+        float: none;
+        width: 100%;
+        margin: auto;
+        padding-top: 45px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+
+    .dropdown {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 981px) {
+    .projects img {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .projects .sanpedro {
+        float: none;
+    }
+}
