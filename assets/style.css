@@ -64,4 +64,8 @@ body {
         display:flex;
         font-size: 3rem;
     }
+
+    #headshot{
+        display:none;
+    }
 }
