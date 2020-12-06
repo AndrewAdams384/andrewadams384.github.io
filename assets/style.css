@@ -52,6 +52,10 @@ body {
     display: none;
 }
 
+.columns {
+    margin: 0;
+}
+
 @media screen and (max-width:768px) {
     #resume-file {
         display:none;
